@@ -2,59 +2,282 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Steven 作品集</title>
-  <!-- <meta http-equiv="refresh" content="0;url=http://220.128.133.15/s1100424/" /> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/mystyle.css">
+    <link rel="icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
 </head>
 
-<body>
+<body style="height: 2000px;">
+    <!-- top image  -->
+    <div class="jumbotron p-0" style="overflow:hidden;height:250px">
+        <a href="index.html">
+            <div id="carouselExampleSlidesOnly" class="carousel slide  position-relative" data-ride="carousel">
+                <div class="carousel-inner position-absolute" style="top:-250px">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./img/landspace-01.jpeg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/landspace-02.jpeg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/landspace-03.jpeg" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!-- top image end -->
+    <!-- nav bar -->
+    <ul class="nav navbar-dark bg-dark justify-content-end navbar-expand-lg fixed-top shadow">
+        <li class="nav-item">
+            <a class="nav-link" href="#work">WORK</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#portfolio">ABOUT ME</a>
+        </li>
+    </ul>
+    <!-- nav bar end-->
 
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v12.0&appId=420885936402658&autoLogAppEvents=1"
-    nonce="fwziiKC4"></script>
 
-  <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default"
-    data-auto-logout-link="false" data-use-continue-as="false"></div>
+    <!-- ABOUT ME -->
+    <div class="container-fluid ">
+        <div class="row justify-content-center">
+            <div class="col-6 box bg-cover justify-content-center">
+                <img class="w-50 shadow rounded mx-auto d-block" src="./img/me-img-001.png">
 
-  <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-  </fb:login-button>
+            </div>
+
+            <div class="col-6 shadow" id="portfolio">
+                <h1>Portfolio</h1>
+                <p class="font-weight-bold">可達鴨</p>
+                <p class="font-weight-bold">鴨寶可夢</p>
+                <p class="font-weight-bold">水屬性</p>
+                <p class="font-weight-bold">身高：0.8m</p>
+                <p class="font-weight-bold">體重：19.6kg</p>
+                <p class="font-weight-bold">性情 可達鴨平時經常頭痛，這使牠經常忘記事情。可達鴨完全不具有進攻性，神情經常處於呆滯狀態。由於不受控制的念力力量，可達鴨經常頭痛到流淚。
+                </p>
+
+            </div>
+            <!-- <div class="col-6 box bg-cover" style="background-image: url('https://picsum.photos/id/1024/800/600')"> -->
+
+            <!-- </div> -->
+
+        </div>
+    </div>
+    <!-- ABOUT ME END-->
+
+    <!-- hirstory -->
+    <div class="container mt-5">
+        <section id=timeline>
+            <div>
+                <h1>可達鴨的冒險經歷</h1>
+            </div>
+            <p class="leader">在旅途中成長的可達鴨</p>
+            <div class="demo-card-wrapper">
+                <div class="demo-card demo-card--step1">
+                    <div class="head">
+                        <div class="number-box">
+                            <span>01</span>
+                        </div>
+                        <h3><span class="small">1997年9月30日</span> 引夢貘人與寶可夢催眠</h3>
+                    </div>
+                    <div class="body">
+                        <p>喬伊小姐拜託小剛照顧一直被頭痛困擾的可達鴨，小剛對可達鴨並不感興趣，讓小霞去收服它，但小霞也不喜歡這只不機靈的可達鴨。結果小霞被石頭絆倒，她的精靈球從包裡掉了出來，可達鴨碰觸到精靈球的按鈕，結果被吸入精靈球，就此成為小霞的寶可夢。</p>
+                        <img class="mx-auto" src="./img/hirstory-card-001.png" style="width: 328px;" alt="Graphic">
+                    </div>
+                </div>
+
+                <div class="demo-card demo-card--step2">
+                    <div class="head">
+                        <div class="number-box">
+                            <span>02</span>
+                        </div>
+                        <h3><span class="small">1999年4月8日</span> 再見可達鴨，又來了哥達鴨！</h3>
+                    </div>
+                    <div class="body">
+                        <p>小霞以為牠進化成哥達鴨欣喜若狂，但原來可達鴨一直在精靈球睡午覺，而出現的哥達鴨只是一隻喜歡親近女孩的且野生的哥達鴨而已</p>
+                        <img class="mx-auto" src="./img/hirstory-card-002.png" style="width: 328px;" alt="Graphic">
+                    </div>
+                </div>
+
+                <div class="demo-card demo-card--step3">
+                    <div class="head">
+                        <div class="number-box">
+                            <span>03</span>
+                        </div>
+                        <h3><span class="small">1999年8月26日</span> 蚊香蝌蚪和小霞！</h3>
+                    </div>
+                    <div class="body">
+                        <p>可達鴨的頭被喵喵咬到，順利使用定身法，也讓小霞順利收服蚊香蝌蚪。</p>
+                        <img class="mx-auto" src="./img/hirstory-card-003.png" style="width: 328px;" alt="Graphic">
+                    </div>
+
+                </div>
+
+                <div class="demo-card demo-card--step4">
+                    <div class="head">
+                        <div class="number-box">
+                            <span>04</span>
+                        </div>
+                        <h3><span class="small">2005年8月25日</span> 可達鴨的憂鬱！</h3>
+                    </div>
+                    <div class="body">
+                        <p>前往即將舉行華麗大賽的金黃市的小智一行人，途中發現被腕力等寶可夢追趕的可達鴨。小智等人救了可達鴨之後，想將它送回原來的主人的身邊。然而，可達鴨的主人其實就是派出腕力的安澄。可達鴨似乎已從安澄家不知逃走了幾次……</p>
+                        <img class="mx-auto" src="./img/hirstory-card-004.png" style="width: 328px;" alt="Graphic">
+                    </div>
+                </div>
+
+                <div class="demo-card demo-card--step5">
+                    <div class="head">
+                        <div class="number-box">
+                            <span>05</span>
+                        </div>
+                        <h3><span class="small">	2017年9月21日</span> 道館對戰！Ｚ招式對超級進化!!</h3>
+                    </div>
+                    <div class="body">
+                        <p>小霞本想讓牠使出念力但是牠卻沒用出來，小智還調笑道這是因為可達鴨呆呆的，隨後甜舞妮的魔法葉擊破水氣球使可達鴨頭部著地重重摔下，這時候可達鴨終於使出了念力控制了球球海獅和甜舞妮，小霞見情勢差不多了就讓牠停止，可是在那之後可達鴨突然抱著頭很痛苦，洛托姆圖鑑不明所以，小智解釋說是牠的頭疼到現在才發作。</p>
+                        <img class="mx-auto" src="./img/hirstory-card-005.jpeg" alt="Graphic">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <!-- hirstoru end -->
+
+    <!-- card start -->
+    <div class="container mx-auto mb-5 row justify-content-around">
+        <div class="col-12 mt-5 mx-auto">
+            <h3 class="text-center" id="work">作品集</h3>
+        </div>
+        <div class="card shadow" style="width: 18rem;">
+            <img src="./img/calendar-img-001.png" class="card-img-top mt-1">
+            <div class="card-body">
+                <h5 class="card-title">萬年曆</h5>
+                <p class="card-text">php製作萬年曆</p>
+                <button type="button" class="btn btn-primary openBtn" data-toggle="modal" data-target="#myModal">
+                點我看更詳細
+              </button>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div class="container mt-3">
+            <div class="container">
+                <!-- Button to Open the Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">萬年曆</h4>
+                                <a class="btn btn-primary" href="http://220.128.133.15/s1100424/calendar">點擊連結</a>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <img src="./img/calendar-img-001.png" class="card-img-top"> 萬年曆
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card2  -->
+        <div class="card shadow" style="width: 18rem;">
+            <img src="./img/vote-img-001.png" class="card-img-top mt-1">
+            <div class="card-body">
+                <h5 class="card-title">投票系統</h5>
+                <p class="card-text">php製作投票系統</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+                    點我看更詳細
+                    </button>
+            </div>
+        </div>
+        <!-- card2 end  -->
+    </div>
+    <!-- Modal end   -->
+    <!-- The Modal -->
+    <div class="container mt-3">
+        <div class="container">
+            <!-- Button to Open the Modal -->
+            <div class="modal" id="myModal2">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">投票系統</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="./img/vote-img-001.png" class="card-img-top"> 投票系統
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <a class="btn btn-primary" href="http://220.128.133.15/s1100424/">點擊連結</a>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Modal end   -->
+    <!-- card end  -->
+
+
+    <footer>
+        <ul class="nav navbar-dark bg-dark justify-content-center navbar-expand-lg shadow">
+            <li class="nav-item">
+                <p class="text-white">© Copyright 2022 by Steven Chiu</p>
+            </li>
+            <div class=" d-flex justify-content-end">
+                <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="http://google.com"><i class="far fa-envelope"></i></a>
+                <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+            </div>
+        </ul>
+    </footer>
 
 </body>
-
 <script>
+    // $(document).ready(function() {
 
-  FB.getLoginStatus(function (response) {
-    statusChangeCallback(response);
-  });
 
-  function checkLoginState() {
-    FB.getLoginStatus(function (response) {
-      statusChangeCallback(response);
-    });
-  }
+    //     $(".openBtn").click(function() {
 
-  window.fbAsyncInit = function () {
-    FB.init({
-      appId: '420885936402658',
-      cookie: true,
-      xfbml: true,
-      version: '{api-version}'
-    });
+    //         console.log('delBtn ok');
+    //     });
+    // });
 
-    FB.AppEvents.logPageView();
 
-  };
+    var myModal = document.getElementById('myModal')
+    var myInput = document.getElementById('myInput')
 
-  (function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) { return; }
-    js = d.createElement(s); js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
+    myModal.addEventListener('shown.bs.modal', function() {
+        myInput.focus()
+    })
 </script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
